@@ -12,8 +12,18 @@ export const Contact = () => {
       </span>
       <br />
       <span>
-        En la web: <a href="">LinkedIn</a> / <a href="">Github</a> /
-        <a href="">Instagram</a>
+        En la web:{' '}
+        <a href="https://www.linkedin.com/in/ricardo-campelo/" target="_blank">
+          LinkedIn
+        </a>{' '}
+        /{' '}
+        <a href="https://github.com/rc-coder" target="_blank">
+          Github
+        </a>{' '}
+        /
+        <a href="https://www.instagram.com/rc.campelo/" target="_blank">
+          Instagram
+        </a>
       </span>
     </ContactContainer>
   );
