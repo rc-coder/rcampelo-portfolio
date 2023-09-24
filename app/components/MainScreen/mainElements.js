@@ -60,7 +60,7 @@ export const MainContent = styled.main`
 export const InfoContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -72,8 +72,9 @@ export const MenuContainer = styled.aside`
   display: flex;
   align-items: center;
   justify-content: end;
-  /* border: 2px solid red; */
+  border-left: 1px solid ${(props) => props.theme.outline};
   align-self: flex-end;
+  transition: all 0.5s;
 
   &.resize {
     width: 15%;
@@ -119,10 +120,13 @@ export const MenuContainer = styled.aside`
 export const PhotoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 10px ${(props) => props.theme.outline};
+  padding: 0 0 10px 10px;
 
   & img {
-    border-radius: 5%;
+    /* border-radius: 5%; */
+    transition: all 0.5s;
+    padding: 10px;
+    border: 2px solid ${(props) => props.theme.outline};
   }
   & h1 {
     font-weight: 300;
@@ -141,6 +145,9 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid ${(props) => props.theme.outline};
+  margin-bottom: 20px;
+  transition: all 0.5s;
 
   & div {
     opacity: 0;

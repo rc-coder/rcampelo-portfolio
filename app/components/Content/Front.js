@@ -1,3 +1,3 @@
 export const Front = () => {
-  return <div>Just a regular cook trying to code</div>;
+  return <div>Just an awesome cook trying to code</div>;
 };
