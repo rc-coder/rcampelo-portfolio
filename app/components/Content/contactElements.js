@@ -19,6 +19,9 @@ export const ContactContainer = styled.div`
     width: 30vw;
     color: ${(props) => props.theme.subtitle};
     transition: all 0.5s;
+    @media screen and (max-width: 900px) {
+      width: 60vw;
+    }
   }
   span {
     color: ${(props) => props.theme.subtitle};

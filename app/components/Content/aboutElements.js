@@ -10,8 +10,8 @@ export const AboutContainer = styled.div`
   scroll-snap-type: inline mandatory;
 
   & div {
+    position: relative;
     border: 1px solid ${(props) => props.theme.outline};
-
     height: 60vh;
     width: auto;
     display: flex;
@@ -21,6 +21,21 @@ export const AboutContainer = styled.div`
     margin: 20px;
     scroll-snap-align: start;
     scroll-margin-inline: 30px;
+
+    @media screen and (max-width: 700px) {
+      height: 70vh;
+      padding: 20px 0px;
+      text-align: left;
+      margin: 10px;
+      border: none;
+      justify-content: unset;
+      scroll-margin-inline: 0px;
+      /* text-size-adjust: initial;
+      overflow-y: scroll; */
+      /* inline-size: 150px;
+      word-wrap: break-word; */
+    }
+
     & h2 {
       align-self: flex-start;
     }

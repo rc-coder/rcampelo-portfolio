@@ -7,6 +7,10 @@ export const ProjectsContainer = styled.div`
   width: 70vw;
   height: 60vh;
   overflow-y: auto;
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+    width: 100%;
+  }
 
   &::-webkit-scrollbar {
     background-color: transparent;
@@ -26,7 +30,8 @@ export const ProjectsContainer = styled.div`
   }
 
   & div {
-    padding: 10px 0px;
+    padding: 1vh 0;
+
     & a {
       font-size: 0.7rem;
       text-decoration: none;

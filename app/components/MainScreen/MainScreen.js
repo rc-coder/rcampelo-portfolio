@@ -37,11 +37,11 @@ export const MainScreen = () => {
         </ColorPicker>
         <Outline>
           <MainContent>
-            <InfoContainer>
+            <InfoContainer className="info">
               <Content>
                 <div className={loaded ? 'loaded' : ''}>{loadContent()}</div>
               </Content>
-              <PhotoContainer>
+              <PhotoContainer className="photo">
                 <Image
                   alt="Profile Pic"
                   src={profilePic}
@@ -51,10 +51,11 @@ export const MainScreen = () => {
                 <p>Desarrollador web</p>
               </PhotoContainer>
             </InfoContainer>
+
             <MenuContainer
               className={selectedOption === 'front' ? '' : 'resize'}
             >
-              <ul className={selectedOption === 'front' ? '' : 'resize'}>
+              <div className={selectedOption === 'front' ? '' : 'resize'}>
                 {sideOptions.map((item) => (
                   <li
                     className={
@@ -69,7 +70,7 @@ export const MainScreen = () => {
                     {item.option}
                   </li>
                 ))}
-              </ul>
+              </div>
             </MenuContainer>
           </MainContent>
         </Outline>

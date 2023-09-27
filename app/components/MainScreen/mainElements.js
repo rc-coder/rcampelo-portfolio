@@ -55,12 +55,15 @@ export const MainContent = styled.main`
   height: 100%;
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const InfoContainer = styled.div`
   width: 100%;
   height: 100%;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -73,23 +76,45 @@ export const MenuContainer = styled.aside`
   align-items: center;
   justify-content: end;
   border-left: 1px solid ${(props) => props.theme.outline};
-  align-self: flex-end;
   transition: all 0.5s;
+  @media screen and (max-width: 900px) {
+    height: 10%;
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid ${(props) => props.theme.outline};
+    justify-content: center;
+  }
 
   &.resize {
     width: 15%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
   }
 
-  & ul {
+  & div {
     padding-right: 50px;
     transition: all cubic-bezier(1, 0, 0, 1);
     font-size: 4vw;
     line-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 900px) {
+      line-height: 4vw;
+      flex-direction: row;
+      gap: 20px;
+      padding: 0;
+    }
 
     &.resize {
       font-size: 1vw;
       line-height: 4vh;
       transform: translateY(35vh);
+      @media screen and (max-width: 900px) {
+        font-size: 4vw;
+        line-height: 4vh;
+        transform: none;
+      }
     }
 
     & li {
@@ -106,6 +131,11 @@ export const MenuContainer = styled.aside`
         list-style-type: circle;
         color: ${(props) => props.theme.selected};
         transition: all 0.5s;
+
+        @media screen and (max-width: 900px) {
+          list-style-type: none;
+          transform: translateY(5px);
+        }
       }
     }
 
@@ -127,9 +157,16 @@ export const PhotoContainer = styled.div`
     transition: all 0.5s;
     padding: 10px;
     border: 2px solid ${(props) => props.theme.outline};
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
   & h1 {
     font-weight: 300;
+    @media screen and (max-width: 900px) {
+      font-size: 7vw;
+    }
   }
 
   & p {
