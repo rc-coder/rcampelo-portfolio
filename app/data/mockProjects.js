@@ -1,17 +1,25 @@
 export const projectList = [
   {
+    id: 11,
+    name: 'Server Actions Taks list',
+    img: '',
+    url: 'https://todo-list-git-main-rc-coder.vercel.app/',
+    description:
+      'Lista de tareas simple usando server actions de Nextjs, vercel/postgres y tailwindCss',
+  },
+  {
     id: 1,
     name: 'Kosuri Tienda',
     img: '',
-    url: 'https://kosuri-integrador-nucba.vercel.app/',
-    description: 'Nextjs Eshop',
+    url: 'https://kosuri-tienda.vercel.app/',
+    description: 'Nextjs, styled components Eshop',
   },
   {
     id: 2,
     name: 'R Campelo Portfolio v1',
     img: '',
-    url: 'https://kosuri-integrador-nucba.vercel.app/',
-    description: 'Angular Ricardo Campelo Portfolio',
+    url: 'https://portfolio-frontend-rcrd.web.app/',
+    description: 'Ricardo Campelo Portfolio en Angular',
   },
   {
     id: 3,
