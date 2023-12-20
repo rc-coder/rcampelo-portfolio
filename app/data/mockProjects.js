@@ -1,5 +1,13 @@
 export const projectList = [
   {
+    id: 111,
+    name: 'Amiibo shelf',
+    img: '',
+    url: 'https://amiibo-shelf.vercel.app/',
+    description:
+      'App para buscar amiibos y guardarlos en una base de datos, hecha con prisma y supabase con autenticación de next auth',
+  },
+  {
     id: 11,
     name: 'Server Actions Taks list',
     img: '',

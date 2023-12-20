@@ -4,12 +4,13 @@ export const ProjectsContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 70vw;
+  width: 80vw;
   height: 60vh;
+  padding: 0 10px;
   overflow-y: auto;
   @media screen and (max-width: 700px) {
     justify-content: center;
-    width: 100%;
+    width: 80vw;
   }
 
   &::-webkit-scrollbar {
@@ -31,6 +32,10 @@ export const ProjectsContainer = styled.div`
 
   & div {
     padding: 1vh 0;
+    width: 60vw;
+    @media screen and (max-width: 700px) {
+      width: 70vw;
+    }
 
     & a {
       font-size: 0.7rem;
